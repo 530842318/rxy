@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        a:hover{
+            text-decoration: none;
+        }
+        .head{
+            height: 0.2976501305483029rem;
+            display: table-cell;
+            vertical-align: middle;
+            border-bottom: 1px #c3c3c3 solid;
+        }
+        .h_empty{
+            display: inline-block;
+            height: 100%;
+            width:1.342036553524804rem;
+            vertical-align: middle;
+        }
+        .head img{
+            vertical-align: middle;
+        }
+        .head .logo{
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #21944b;
+            width: 0.2349869451697128rem;
+            height: 0.0939947780678851rem;
+            font-size: 0.0626631853785901rem;
+            color: #d6e7db;
+            padding: 0.02088772845953rem;
+            border-radius: 7px;
+        }
+        .head span{
+            margin-left: 0.2610966057441253rem;
+            font-size: 0.0835509138381201rem;
+            color: #333333;
+            text-decoration: none;
+        }
+        .head .img1{
+            height: 0.2193211488250653rem;
+        }
+        .head .img2{
+            height: 0.0835509138381201rem;
+        }
+        .head .img3{
+            margin-left: 0.2610966057441253rem;
+            height: 0.1044386422976501rem;
+        }
+        .head .img4{
+            margin-left: 0.3133159268929504rem;
+            height: 0.1723237597911227rem;
+        }
+        .head #auto{
+            margin-left: 0.0626631853785901rem;
+            color: #333333;
+        }
+        .head .h_empty1{
+            display: inline-block;
+            width:1.959791122715405rem;
+            vertical-align: middle;
+        }
+        .head .auto{
+            color: #3ba8f0;
+        }
+        .head .auto1{
+            color: #3ba8f0;
+        }
+
+
+        .main{
+            margin: 25px 0;
+            height: 5.065274151436031rem;
+        }
+        .main .m_empty{
+            float: left;
+            height: 100%;
+            width:1.342036553524804rem;
+            background-color: white;
+        }
+        .main .m_left{
+            float: left;
+            display: inline-block;
+            height: 100%;
+            width: 1.253263707571802rem;
+            border-right: 1px solid black;
+        }
+        .main .m_f_empty{
+            width: 1px;
+            height: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .main .m_f_e_auto{
+            background-color: #3ba8f0;
+        }
+
+        .main .able{
+            background-color: #f4f5f5;
+        }
+        .main .able1{
+            background-color: #f4f5f5;
+        }
+
+        .main .m_left .m_left_top{
+            width: 100%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .main .m_left .m_left_top img{
+            vertical-align: middle;
+        }
+        .main .m_left .m_left_top .m_l_img1{
+            height: 0.1566579634464752rem;
+        }
+        .main .m_left .m_left_top .m_l_img2{
+            height: 0.1044386422976501rem;
+        }
+        .main .m_left .m_left_top span{
+            vertical-align: middle;
+            color: #a9a9a9;
+            font-size: 0.1044386422976501rem ;
+            margin-left: 0.0731070496083551rem;
+            margin-right: 0.2577545691906005rem;
+        }
+        .main .middle{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .main .m_height{
+            height: 50px;
+        }
+        .main .m_height img,.main .m_height span{
+            vertical-align: middle;
+            margin-left: 0.1044386422976501rem;
+            color: #333333;
+            font-size: 0.0731070496083551rem;
+        }
+        .main .m_foot{
+            margin-top: 0.2976501305483029rem;
+        }
+        .main .m_right{
+            float: left;
+            width: 5.247780678851175rem;
+            margin-left: 0.1775456919060052rem;
+        }
+        .main .m_r_top{
+            height: 0.1827676240208877rem;
+            position: relative;
+        }
+        .main .m_r_top_l{
+            position: absolute;
+            left: 0;
+            top:0.1035509138381201rem;
+            color:#000;
+            font-size: 0.0731070496083551rem;
+        }
+        .main .m_r_top_r{
+            position: absolute;
+            left: 100%;
+            font-size: 0.0626631853785901rem;
+            height: 0.1827676240208877rem;
+            width: 0.5221932114882507rem;
+            background-color: #3ca8f0;
+            border-radius: 2px;
+        }
+        .main .m_r_top_r span{
+            position: relative;
+            left: 0.0887728459530026rem;
+            top: 0.0469973890339426rem;
+            color: #fff;
+        }
+        .main .m_right .m_r_empty{
+            height: 0.1044386422976501rem;
+            width: 5.769973890339426rem;
+            /*background-color: grey;*/
+            border-bottom: 1px solid #e6e7e7;
+        }
+        .main .m_right .m_r_main {
+            margin-top: 0.0992167101827676rem;
+        }
+        .main .m_right .m_r_main input{
+            outline: none;
+        }
+        .main .m_right .m_r_main p{
+            color: #666;
+            font-size: 0.0731070496083551rem;
+        }
+        .main .m_right .m_r_main p span{
+            color: #3ba8f0;
+        }
+        .main .m_right .m_r_main .m_r_main-leng{
+            width: 2.088772845953003rem;
+            height: 0.1879895561357702rem;
+        }
+        .main .m_right .m_r_main .m_r_m_center{
+            width: 2.856396866840731rem;
+        }
+        .main .m_right .m_r_main .m_r_m_center .m_r_m_c-left{
+            float: right;
+            position: relative;
+        }
+        .tishi{
+            position: absolute;
+            left: 2.428198433420366rem;
+            top: 0.0365535248041775rem;
+            font-size: 0.0939947780678851rem;
+            color: red;
+            width: 300px;
+        }
+        #example0{
+            left: 2.506527415143603rem;
+        }
+        #example1{
+            left: 1.253263707571802rem;
+        }
+        #example2{
+            left: 2.715404699738903rem;
+        }
+        .main .m_right .m_r_main .m_r_m_bottom{
+            margin-bottom: 0.1044386422976501rem;
+        }
+        .main .m_right .m_r_main .m_r_main_fs{
+            font-size: 0.0731070496083551rem;
+        }
+        .dis{
+            display: inline-block;
+        }
+        .main .m_right .m_r_main .m_r_m_center .m_r_m_c-left .m_right_30{
+            margin-right: 0.1566579634464752rem;
+            color: #666666;
+            font-size: 0.0731070496083551rem;
+        }
+        input[type="radio"]{
+            margin-right: 0.0522193211488251rem;
+        }
+        .m_r_fontright1{
+            margin-right: 0.1827676240208877rem;
+        }
+        .m_r_fontright2,.m_r_fontright3{
+            margin-right: 0.0844386422976501rem;
+        }
+        .m_r_fontsize{
+            font-size: 0.0731070496083551rem;
+        }
+        .main .m_right .m_r_main .m_r_main-leng img{
+            height: 0.1788772845953003rem;
+        }
+        .teshu0{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .teshu1{
+            vertical-align: middle;
+        }
+        .teshu2{
+            vertical-align: middle;
+            border: 1px solid #000;
+            display: inline-block;
+            position: relative;
+        }
+        .teshu2 img{
+            height: 0.1879895561357702rem;
+            position: absolute;
+            left: 1.927885117493473rem;
+        }
+        .teshu2 span{
+            position: absolute;
+            top: 0.0469973890339426rem;
+            left: 0.0208877284595rem;
+        }
+        .teshu2 .teshu2_out{
+            border: 1px solid #ccc;
+            position: absolute;
+            top: 120%;
+            left: -1px;
+            border-radius: 5px;
+            display: none;
+            background-color: #fff;
+            z-index: 10000;
+        }
+        .teshu2 .teshu2_out div{
+            width: 2.078772845953003rem;
+            background-color: #fff;
+            height: 0.1879895561357702rem;
+            line-height: 0.1879895561357702rem;;
+        }
+        .exit{
+            display: block!important;
+        }
+        .e9{
+            background-color: #e9e9e9!important;
+        }
+        .main .m_right .m_r_main .radio>div{
+            border-radius: 50%;
+            border: 1px solid #000;
+            height: 0.0755509138381201rem;
+            width: 0.0755509138381201rem;
+            display: inline-block;
+            margin-right: 0.0522193211488251rem;
+
+        }
+        .main .m_right .m_r_main .radio>div>div{
+            border-radius: 50%;
+            height: 0.0405509138381201rem;
+            width: 0.0405509138381201rem;
+            margin: 0.0092950391644909rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="h_empty"></div>
+        <a href=""><img src="img/矢量智能对象.png" alt="" class="img1"></a>
+        <a href=""><img src="img/形状%201.png" alt="" class="img2"></a>
+        <div class="logo">网教通</div>
+        <a href=""><span class="h_dh">首页</span></a>  <!--zzzz-->
+        <a href=""><span class="h_dh auto">教学管理</span></a>
+        <a href=""><span class="h_dh">学习</span></a>
+        <a href=""><span class="h_dh">资源超市</span></a>
+        <a href=""><span class="h_dh">教育应用</span></a>
+        <a href=""><span class="h_dh">新闻</span></a>
+        <a href=""><span class="h_dh">名师名校</span></a>
+        <a href=""><img src="img/创建班级_03.png" alt="" class="img3"></a>
+        <a href=""><img src="img/icon.png" alt="" class="img4"></a>
+        <a href=""><span id="auto">coco</span></a>
+        <div class="h_empty1"></div>
+    </div>
+
+    <div class="main">
+        <div class="m_empty"></div>
+        <div class="m_left">
+            <div class="m_left_top">
+                <img src="img/1_03.png" alt="" class="m_l_img1">
+                <a href=""><span>个人中心</span></a>
+                <img src="img/2_03.png" alt="" class="m_l_img2">
+            </div>
+            <div class="m_foot">
+                <div>
+                    <div class="m_height middle">
+                        <div class="m_f_empty"></div>
+                        <img src="img/3_03.png" alt="" class="center">
+                        <a href=""><span class="center">其他内容</span></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="m_height middle">
+                        <div class="m_f_empty"></div>
+                        <img src="img/3_03.png" alt="" class="center">
+                        <a href=""><span class="center">其他内容</span></a>
+                    </div>
+                </div>
+                <div class="able">
+                    <div class="m_height middl">
+                        <div class="m_f_empty m_f_e_auto"></div> <!-- m_f_e_auto 选中-->
+<!--                        <div style="width: 1px;background-color: #38dff1;height: 100%;vertical-align: middle;display: inline-block"></div>-->
+                        <img src="img/3_03.png" alt="" class="m_f_w center">
+                        <a href=""><span class="center">我的班级</span></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="m_height middle">
+                        <div class="m_f_empty"></div>
+                        <img src="img/3_03.png" alt="" class="center">
+                        <a href=""><span class="center">其他内容</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m_right">
+            <div class="m_r_top">
+                <div class="m_r_top_l"><a href="优化我的班级.html"><span>我的班级</span></a></div>
+                <div class="m_r_top_r"><a href="优化我的班级.html"><span>返回上一级</span></a></div>
+            </div>
+            <div class="m_r_empty"></div>
+            <div class="m_r_main">
+                <p class="m_r_m_bottom">尊敬的<span>老师（<span id="teacher">刘老师</span>）</span>，请填写你的班级信息：</p>
+                <div class="m_r_m_center">
+                    <div class="m_r_m_c-left m_r_m_bottom">
+                        <span class="m_right_30">学校</span>
+                        <input id="school" type="text" placeholder="请选择学校" class="m_r_main_fs m_r_main-leng">
+                        <span class="tishi"></span>
+                    </div>
+                    <div class="m_r_m_c-left m_r_m_bottom teshu0">
+                        <span class="m_right_30 teshu1">学段</span>
+                        <div class="m_r_main_fs m_r_main-leng teshu2">
+                            <span id="study">请选择学段</span>
+                            <img src="img/下拉_03.png" alt="">
+                            <div class="teshu2_out ">
+                                <div>小学</div>
+                                <div>初中</div>
+                                <div>高中</div>
+                                <div>大学</div>
+                            </div>
+                        </div>
+                        <span class="tishi"></span>
+                    </div>
+                    <div class="m_r_m_c-left m_r_m_bottom teshu0">
+                        <span class="m_right_30 teshu1">年级</span>
+                        <div class="m_r_main_fs m_r_main-leng teshu2">
+                            <span id="rank">请选择年级</span>
+                            <img src="img/下拉_03.png" alt="">
+                            <div class="teshu2_out ">
+                                <div>一年级</div>
+                                <div>二年级</div>
+                                <div>三年级</div>
+                            </div>
+                        </div>
+                        <span class="tishi"></span>
+                    </div>
+                    <div class="m_r_m_c-left m_r_m_bottom">
+                        <span class="m_right_30">班级名</span>
+                        <input id="clsN" type="text" class="m_r_main_fs m_r_main-leng" placeholder="请输入班级名称，限20个字符，不支持输入_和%">
+                        <span class="tishi" id="example0"></span>
+                    </div>
+                    <div class="m_r_m_c-left m_r_m_bottom">
+                        <span class="m_right_30">类型</span>
+                        <div class="dis m_r_main-leng radio" id="type"> <!--不占一行-->
+                            <div value="1"><div></div></div><span class="m_r_fontsize m_r_fontright1">行政部</span>
+                            <div value="2"><div></div></div><span class="m_r_fontsize">教学班</span>
+                        </div>
+                        <span class="tishi" id="example1"></span>
+                    </div>
+                    <div class="m_r_m_c-left m_r_m_bottom">
+                        <span class="m_right_30">退出权限设置</span>
+                        <div class="dis m_r_main-leng radio" id="exit"> <!--不占一行-->
+                            <div value="1"><div></div></div><span class="m_r_fontsize m_r_fontright2">允许退出</span>
+                            <div value="2"><div></div></div><span class="m_r_fontsize m_r_fontright3">通过班级管理员审核后退出</span>
+                            <div value="3"><div></div></div><span class="m_r_fontsize">禁止退出</span>
+                        </div>
+                        <span class="tishi" id="example2"></span>
+                    </div>
+                    <div class="m_r_m_c-left m_r_m_bottom">
+                        <div class="dis m_r_main-leng">
+                            <img src="img/保存_03.png" alt="" class="save">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/1.js"></script>
+<script src="js/2.js"></script>
+<script src="js/组件.js"></script>
+<script src="js/创建班级.js"></script>
+</html>

@@ -1,0 +1,10 @@
+.main{
+    margin: 25px 0;
+    height: 5.065274151436031rem;
+}
+.main .m_empty{
+    float: left;
+    height: 100%;
+    width:1.342036553524804rem;
+    background-color: white;
+}
